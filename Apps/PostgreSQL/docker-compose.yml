@@ -5,9 +5,9 @@ services:
       PUID: $PUID
       PGID: $PGID
       TZ: $TZ
-      POSTGRES_USER: casaos
-      POSTGRES_PASSWORD: casaos
-      POSTGRES_DB: casaos
+      POSTGRES_USER: nextzen
+      POSTGRES_PASSWORD: smartyourlife
+      POSTGRES_DB: nextzen
     image: postgres:15.3
     deploy:
       resources:
@@ -163,9 +163,9 @@ x-casaos:
   tips:
     before_install:
       en_us: |
-        Default user: `casaos`
-        Default password: `casaos`
-        Default database: `casaos`
+        Default user: `nextzen`
+        Default password: `smartyourlife`
+        Default database: `nextzen`
   title:
     en_us: PostgreSQL
   category: Developer

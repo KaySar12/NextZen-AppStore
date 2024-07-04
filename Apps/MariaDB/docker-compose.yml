@@ -7,10 +7,10 @@ services:
       PUID: $PUID
       PGID: $PGID
       TZ: $TZ
-      MYSQL_ROOT_PASSWORD: 'casaos'
-      MYSQL_DATABASE: 'casaos'
-      MYSQL_USER: 'casaos'
-      MYSQL_PASSWORD: 'casaos'
+      MYSQL_ROOT_PASSWORD: 'smartyourlife'
+      MYSQL_DATABASE: 'nextzen'
+      MYSQL_USER: 'nextzen'
+      MYSQL_PASSWORD: 'smartyourlife'
       REMOTE_SQL: ''
     x-casaos:
       envs:
@@ -122,11 +122,11 @@ x-casaos:
   tips:
     before_install:
       en_us: |
-        Default user: `casaos`
-        Default password: `casaos`
-        Default database: `casaos`
+        Default user: `nextzen`
+        Default password: `smartyourlife`
+        Default database: `nextzen`
 
-        Default root password: `casaos`
+        Default root password: `smartyourlife`
   title:
     en_us: MariaDB
   category: Developer

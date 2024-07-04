@@ -6,9 +6,6 @@
     "appid": "homeassistant"
   },
   {
-    "appid": "adguard-home"
-  },
-  {
     "appid": "jellyfin"
   },
   {
@@ -19,5 +16,8 @@
   },
   {
     "appid": "lidarr"
+  },
+  {
+    "appid": "plex"
   }
 ]
