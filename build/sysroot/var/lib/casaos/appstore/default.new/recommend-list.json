@@ -1,0 +1,23 @@
+[
+  {
+    "appid": "odoo"
+  },
+  {
+    "appid": "homeassistant"
+  },
+  {
+    "appid": "jellyfin"
+  },
+  {
+    "appid": "photoprism"
+  },
+  {
+    "appid": "bazarr"
+  },
+  {
+    "appid": "lidarr"
+  },
+  {
+    "appid": "plex"
+  }
+]
