@@ -9,7 +9,7 @@ RECOMMEND=recommend-list.json
 APP_LIST_DIR=Apps
 SCRIPT_DIR=scripts
 
-build_appstore:
+build:
 	if [ ! -d "${BUILD_PATH}/${APP_PATH}" ]; then mkdir -p ${BUILD_PATH}/${APP_PATH}; fi
 	cp -f ${FEATURE} ${CATEGORY} ${RECOMMEND} ${BUILD_PATH}/${APP_PATH}
 	cp -rvf ${APP_LIST_DIR} ${BUILD_PATH}/${APP_PATH}
