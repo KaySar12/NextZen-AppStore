@@ -75,13 +75,27 @@ services:
     container_name: "nexterp-db"
     hostname: "nexterp-db"
 x-casaos:
-  author: self
-  category: self
-  hostname: ""
-  icon: https://git.nextzenos.com/CDN/Images/raw/branch/main/NextERP/NextERP2.png
+  architectures:
+    - amd64
+    - arm
+    - arm64
+  main: nexterp
+  author: nextzen
+  category: Developer
+  description:
+    en_us: NextERP is a software tools that include customer relationship management, e-commerce, billing, accounting, manufacturing, warehouse, project management, and inventory management.
+  icon: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFT-Y0lAmy2WK6QtK0ZfzTi0OMERiiPiLSCg&s
+  screenshot_link:
+    - https://www.ife.de/web/image/2126/20171111%20Pipeline.jpg
+    - https://easypanel.io/assets/images/screenshot-848927db3f2bab2af809bb7a7753c00a.png
+    - https://www.images.cybrosys.com/blog/Uploads/BlogImage/how-to-schedule-a-new-meeting-with-odoo-15-calendar-module-3.png
+    - https://rsbsfze.com/images/Screenshot_9.png
+  tagline:
+   en_us: Elevate your business
   index: /
-  port_map: ""
+  is_uncontrolled: false
+  thumbnail: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkIh8zFzFTMndIvejW35tKyCQgNkTEmt3fQA&s
+  port_map: "10017"
   scheme: http
-  store_app_id: nexterp
   title:
-    custom: NextERP
+    custom: Odoo
