@@ -97,5 +97,6 @@ x-casaos:
   thumbnail: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkIh8zFzFTMndIvejW35tKyCQgNkTEmt3fQA&s
   port_map: "10017"
   scheme: http
+  store_app_id: nexterp
   title:
-    custom: Odoo
+    custom: nexterp
