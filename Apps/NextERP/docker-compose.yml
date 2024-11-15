@@ -1,0 +1,87 @@
+name: nexterp
+services:
+  nexterp-nextzen:
+    cpu_shares: 90
+    command: []
+    depends_on:
+      nexterp-db-nextzen:
+        condition: service_started
+        required: true
+    deploy:
+      resources:
+        limits:
+          memory: 15860M
+    environment:
+      - HOST=nexterp-db-nextzen
+      - PASSWORD=smartyourlife
+      - USER=nextzen
+    image: kaysar12/nexterp:1.3
+    labels:
+      icon: https://git.nextzenos.com/CDN/Images/raw/branch/main/NextERP/NextERP2.png
+    ports:
+      - target: 8069
+        published: "27000"
+        protocol: tcp
+      - target: 8072
+        published: "19000"
+        protocol: tcp
+      - target: 22
+        published: "24000"
+        protocol: tcp
+    restart: unless-stopped
+    tty: true
+    user: root
+    volumes:
+      - type: bind
+        source: /NextZen/Apps/Default/NextZen-ERP/web-data
+        target: /var/lib/odoo
+      - type: bind
+        source: /NextZen/Apps/Default/NextZen-ERP/config
+        target: /etc/odoo
+      - type: bind
+        source: /NextZen/Apps/Default/NextZen-ERP/addons
+        target: /mnt/extra-addons
+    devices: []
+    cap_add: []
+    network_mode: bridge
+    privileged: false
+    container_name: ""
+    hostname: ""
+  nexterp-db-nextzen:
+    cpu_shares: 90
+    command: []
+    deploy:
+      resources:
+        limits:
+          memory: 15860M
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_PASSWORD=smartyourlife
+      - POSTGRES_USER=nextzen
+    image: postgres:16
+    labels:
+      icon: https://git.nextzenos.com/CDN/Images/raw/branch/main/NextERP/NextERP2.png
+    restart: unless-stopped
+    user: root
+    volumes:
+      - type: bind
+        source: /NextZen/Apps/Default/NextZen-ERP/db-data
+        target: /var/lib/postgresql/data
+    ports: []
+    devices: []
+    cap_add: []
+    network_mode: bridge
+    privileged: false
+    container_name: ""
+    hostname: ""
+x-casaos:
+  author: self
+  category: self
+  hostname: ""
+  icon: https://git.nextzenos.com/CDN/Images/raw/branch/main/NextERP/NextERP2.png
+  index: /
+  port_map: ""
+  scheme: http
+  store_app_id: nexterp
+  title:
+    custom: NextERP
