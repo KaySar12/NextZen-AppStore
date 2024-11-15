@@ -80,7 +80,7 @@ x-casaos:
     - arm
     - arm64
   main: nexterp
-  author: nextzen
+  author: NextZen Team
   category: Developer
   description:
     en_us: NextERP is a software tools that include customer relationship management, e-commerce, billing, accounting, manufacturing, warehouse, project management, and inventory management.
@@ -95,8 +95,8 @@ x-casaos:
   index: /
   is_uncontrolled: false
   thumbnail: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkIh8zFzFTMndIvejW35tKyCQgNkTEmt3fQA&s
-  port_map: "10017"
+  port_map: "27000"
   scheme: http
   store_app_id: nexterp
   title:
-    custom: nexterp
+    en_us: nexterp
