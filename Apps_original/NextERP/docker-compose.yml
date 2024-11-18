@@ -1,0 +1,100 @@
+name: nexterp
+services:
+  nexterp:
+    cpu_shares: 90
+    command: []
+    depends_on:
+      db:
+        condition: service_started
+        required: true
+    deploy:
+      resources:
+        limits:
+          memory: 15860M
+    environment:
+      - HOST=nexterp-db
+      - PASSWORD=smartyourlife
+      - USER=nextzen
+    image: kaysar12/nexterp:1.3
+    labels:
+      icon: https://git.nextzenos.com/CDN/Images/raw/branch/main/NextERP/NextERP2.png
+    ports:
+      - target: 8069
+        published: "27000"
+        protocol: tcp
+      - target: 8072
+        published: "19000"
+        protocol: tcp
+      - target: 22
+        published: "24000"
+        protocol: tcp
+    restart: unless-stopped
+    tty: true
+    user: root
+    volumes:
+      - type: bind
+        source: /NextZen/Apps/Default/NextZen-ERP/web-data
+        target: /var/lib/odoo
+      - type: bind
+        source: /NextZen/Apps/Default/NextZen-ERP/config
+        target: /etc/odoo
+      - type: bind
+        source: /NextZen/Apps/Default/NextZen-ERP/addons
+        target: /mnt/extra-addons
+    devices: []
+    cap_add: []
+    network_mode: bridge
+    privileged: false
+    container_name: "nexterp"
+    hostname: "nexterp"
+  nexterp-db:
+    cpu_shares: 90
+    command: []
+    deploy:
+      resources:
+        limits:
+          memory: 15860M
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_PASSWORD=smartyourlife
+      - POSTGRES_USER=nextzen
+    image: postgres:16
+    restart: unless-stopped
+    user: root
+    volumes:
+      - type: bind
+        source: /NextZen/Apps/Default/NextZen-ERP/db-data
+        target: /var/lib/postgresql/data
+    ports: []
+    devices: []
+    cap_add: []
+    network_mode: bridge
+    privileged: false
+    container_name: "nexterp-db"
+    hostname: "nexterp-db"
+x-casaos:
+  architectures:
+    - amd64
+    - arm
+    - arm64
+  main: nexterp
+  author: NextZen Team
+  category: Developer
+  description:
+    en_us: NextERP is a software tools that include customer relationship management, e-commerce, billing, accounting, manufacturing, warehouse, project management, and inventory management.
+  icon: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFT-Y0lAmy2WK6QtK0ZfzTi0OMERiiPiLSCg&s
+  screenshot_link:
+    - https://www.ife.de/web/image/2126/20171111%20Pipeline.jpg
+    - https://easypanel.io/assets/images/screenshot-848927db3f2bab2af809bb7a7753c00a.png
+    - https://www.images.cybrosys.com/blog/Uploads/BlogImage/how-to-schedule-a-new-meeting-with-odoo-15-calendar-module-3.png
+    - https://rsbsfze.com/images/Screenshot_9.png
+  tagline:
+   en_us: Elevate your business
+  index: /
+  is_uncontrolled: false
+  thumbnail: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkIh8zFzFTMndIvejW35tKyCQgNkTEmt3fQA&s
+  port_map: "27000"
+  scheme: http
+  store_app_id: nexterp
+  title:
+    en_us: nexterp
