@@ -9,7 +9,7 @@ services:
   # This section defines the main Odoo service
   nexterp:
     # Name of the container
-    container_name: big-bear-odoo # Specifies the container instance name for identification
+    container_name: nexterp # Specifies the container instance name for identification
 
     # Image to be used for the container
     image: kaysar12/nexterp:1.3 # Docker image for Odoo version 17
@@ -69,8 +69,8 @@ services:
     image: postgres:16 # PostgreSQL version 15 Docker image
     user: root # Runs as root user
     environment:
-      - POSTGRES_USER=odoo # Database user
-      - POSTGRES_PASSWORD=a8d785b6-bc00-49cc-8675-d404093d1507 # Database password
+      - POSTGRES_USER=nextzen # Database user
+      - POSTGRES_PASSWORD=nextzen # Database password
       - POSTGRES_DB=postgres # Database name
     restart: unless-stopped # Restart policy for the database
     volumes: -/NextZen/Apps/Default/NextZenERP/db-data:/var/lib/postgresql/data # Mounts PostgreSQL data directory
@@ -125,7 +125,7 @@ x-casaos:
   title:
     en_us: NextErp
   # Application category
-  category: BigBearCasaOS
+  category: Developer
   # Port mapping information
   port_map: "8069"
   tips:
