@@ -24,7 +24,7 @@ services:
         source: /DATA/Media/TV Shows
         target: /tv
       - type: bind
-        source: /DATA/AppData/bazarr/config
+        source: /NextZen/Apps/Default/bazarr/config
         target: /config
     x-casaos:
       envs:

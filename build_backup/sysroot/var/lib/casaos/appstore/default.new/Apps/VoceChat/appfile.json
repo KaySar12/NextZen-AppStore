@@ -61,7 +61,7 @@
     "volumes": [
       {
         "container": "/home/vocechat-server/data",
-        "host": "/DATA/AppData/$AppID/home/vocechat-server/data",
+        "host": "/NextZen/Apps/Default/$AppID/home/vocechat-server/data",
         "mode": "rw",
         "allocation": "automatic",
         "configurable": "no",

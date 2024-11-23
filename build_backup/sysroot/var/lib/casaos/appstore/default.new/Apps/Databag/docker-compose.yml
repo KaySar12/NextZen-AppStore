@@ -20,7 +20,7 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/databag/data
+        source: /NextZen/Apps/Default/databag/data
         target: /var/lib/databag
     container_name: databag
 x-casaos:

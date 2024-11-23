@@ -45,10 +45,10 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/mongodb4/data/configdb
+        source: /NextZen/Apps/Default/mongodb4/data/configdb
         target: /data/configdb
       - type: bind
-        source: /DATA/AppData/mongodb4/data/db
+        source: /NextZen/Apps/Default/mongodb4/data/db
         target: /data/db
     container_name: mongodb4
 x-casaos:

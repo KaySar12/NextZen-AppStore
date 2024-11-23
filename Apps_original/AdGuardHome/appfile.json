@@ -84,7 +84,7 @@
 		"volumes": [
 			{
 				"container": "/opt/adguardhome/work",
-				"host": "/DATA/AppData/$AppID/opt/adguardhome/work",
+				"host": "/NextZen/Apps/Default/$AppID/opt/adguardhome/work",
 				"mode": "rw",
 				"allocation": "automatic",
 				"configurable": "no",
@@ -92,7 +92,7 @@
 			},
 			{
 				"container": "/opt/adguardhome/conf",
-				"host": "/DATA/AppData/$AppID/opt/adguardhome/conf",
+				"host": "/NextZen/Apps/Default/$AppID/opt/adguardhome/conf",
 				"mode": "rw",
 				"allocation": "automatic",
 				"configurable": "no",

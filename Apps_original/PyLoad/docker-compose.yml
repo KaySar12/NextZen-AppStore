@@ -16,7 +16,7 @@ services:
     privileged: false
     volumes:
       - type: bind
-        source: /DATA/AppData/$AppID/config
+        source: /NextZen/Apps/Default/$AppID/config
         target: /config
       - type: bind
         source: /DATA/Downloads

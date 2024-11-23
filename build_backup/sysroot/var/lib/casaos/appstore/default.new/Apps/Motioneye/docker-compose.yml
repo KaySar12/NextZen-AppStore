@@ -10,7 +10,7 @@ services:
     restart: unless-stopped
     volumes:
       - type: bind
-        source: /DATA/AppData/motioneye/config
+        source: /NextZen/Apps/Default/motioneye/config
         target: /etc/motioneye
       - type: bind
         source: /DATA/Media/motioneye

@@ -1,7 +1,7 @@
 [
     {
          "name": "nexterp",
-         "editor": "Nextzen Team",
+         "editor": "NextzenOS Team",
          "date": "1640829941",
          "reason": "Everyone's love"
      },
@@ -22,5 +22,11 @@
          "editor": "CasaOS Team",
          "date": "1640830720",
          "reason": "Public Cloud Walk Away~"
-     }
+     },
+     {
+        "name": "adguardhome",
+        "editor": "CasaOS Team",
+        "date": "1640830720",
+        "reason": "Public Cloud Walk Away~"
+    }
  ]

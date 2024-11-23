@@ -32,7 +32,7 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/filedrop/data
+        source: /NextZen/Apps/Default/filedrop/data
         target: /var/file_drop_files
     container_name: filedrop
 x-casaos:

@@ -13,7 +13,7 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/$AppID/config
+        source: /NextZen/Apps/Default/$AppID/config
         target: /config
     x-casaos:
       envs:

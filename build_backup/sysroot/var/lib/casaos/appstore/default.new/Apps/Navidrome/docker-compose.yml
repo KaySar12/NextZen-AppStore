@@ -16,7 +16,7 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/$AppID/data
+        source: /NextZen/Apps/Default/$AppID/data
         target: /data
       - type: bind
         source: /DATA/Media/Music

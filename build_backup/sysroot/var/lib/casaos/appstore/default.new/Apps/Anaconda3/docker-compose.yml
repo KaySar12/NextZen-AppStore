@@ -15,7 +15,7 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/$AppID/notebooks
+        source: /NextZen/Apps/Default/$AppID/notebooks
         target: /opt/notebooks
     command:
       - /bin/bash

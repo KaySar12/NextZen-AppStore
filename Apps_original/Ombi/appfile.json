@@ -77,7 +77,7 @@
 		"volumes": [
 			{
 				"container": "/config",
-				"host": "/DATA/AppData/ombi/config",
+				"host": "/NextZen/Apps/Default/ombi/config",
 				"mode": "rw",
 				"allocation": "automatic",
 				"configurable": "no",

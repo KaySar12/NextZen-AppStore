@@ -16,7 +16,7 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/$AppID/config
+        source: /NextZen/Apps/Default/$AppID/config
         target: /config
     environment:
       ESPHOME_DASHBOARD_USE_PING: "false"

@@ -68,7 +68,7 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/overseerr/config
+        source: /NextZen/Apps/Default/overseerr/config
         target: /config
     container_name: overseerr
 x-casaos:

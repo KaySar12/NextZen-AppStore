@@ -19,13 +19,13 @@ services:
     restart: unless-stopped
     volumes:
       - type: bind
-        source: /DATA/AppData/Stable-Diffusion-WebUI/models
+        source: /NextZen/Apps/Default/Stable-Diffusion-WebUI/models
         target: /data/models
       - type: bind
-        source: /DATA/AppData/Stable-Diffusion-WebUI/outputs
+        source: /NextZen/Apps/Default/Stable-Diffusion-WebUI/outputs
         target: /data/outputs
       - type: bind
-        source: /DATA/AppData/Stable-Diffusion-WebUI/config
+        source: /NextZen/Apps/Default/Stable-Diffusion-WebUI/config
         target: /data/config
     privileged: false
     container_name: icewhale-stable-diffusion-webui

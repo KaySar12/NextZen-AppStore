@@ -6,13 +6,13 @@ services:
     image: ns2kracy/dify-config:latest
     volumes:
       - type: bind
-        source: /DATA/AppData/$AppID/data/nginx
+        source: /NextZen/Apps/Default/$AppID/data/nginx
         target: /configs/nginx
       - type: bind
-        source: /DATA/AppData/$AppID/data/ssrf_proxy
+        source: /NextZen/Apps/Default/$AppID/data/ssrf_proxy
         target: /configs/ssrf_proxy
       - type: bind
-        source: /DATA/AppData/$AppID/data/sandbox
+        source: /NextZen/Apps/Default/$AppID/data/sandbox
         target: /configs/sandbox
     networks:
       - dify
@@ -66,7 +66,7 @@ services:
       - db
       - redis
     volumes:
-      - /DATA/AppData/$AppID/data/app/api/storage:/app/api/storage
+      - /NextZen/Apps/Default/$AppID/data/app/api/storage:/app/api/storage
     networks:
       - ssrf_proxy_network
       - dify
@@ -99,7 +99,7 @@ services:
       - db
       - redis
     volumes:
-      - /DATA/AppData/$AppID/data/app/api/storage:/app/api/storage
+      - /NextZen/Apps/Default/$AppID/data/app/api/storage:/app/api/storage
     networks:
       - ssrf_proxy_network
       - dify
@@ -128,7 +128,7 @@ services:
       POSTGRES_DB: dify
       PGDATA: /var/lib/postgresql/data/pgdata
     volumes:
-      - /DATA/AppData/$AppID/data/db/data:/var/lib/postgresql/data
+      - /NextZen/Apps/Default/$AppID/data/db/data:/var/lib/postgresql/data
     healthcheck:
       test: ["CMD", "pg_isready"]
       interval: 1s
@@ -142,7 +142,7 @@ services:
     container_name: dify-redis
     restart: unless-stopped
     volumes:
-      - /DATA/AppData/$AppID/data/redis/data:/data
+      - /NextZen/Apps/Default/$AppID/data/redis/data:/data
     command:
       - redis-server
       - --requirepass
@@ -157,7 +157,7 @@ services:
     container_name: dify-weaviate
     restart: unless-stopped
     volumes:
-      - /DATA/AppData/$AppID/data/weaviate:/var/lib/weaviate
+      - /NextZen/Apps/Default/$AppID/data/weaviate:/var/lib/weaviate
     environment:
       QUERY_DEFAULTS_LIMIT: "25"
       AUTHENTICATION_ANONYMOUS_ACCESS_ENABLED: "false"
@@ -185,7 +185,7 @@ services:
       HTTPS_PROXY: "http://ssrf_proxy:3128"
       SANDBOX_PORT: "8194"
     volumes:
-      - /DATA/AppData/$AppID/data/sandbox/dependencies:/dependencies
+      - /NextZen/Apps/Default/$AppID/data/sandbox/dependencies:/dependencies
     networks:
       - ssrf_proxy_network
     depends_on:
@@ -196,7 +196,7 @@ services:
     container_name: dify-ssrf_proxy
     restart: unless-stopped
     volumes:
-      - /DATA/AppData/$AppID/data/ssrf_proxy:/etc/squid
+      - /NextZen/Apps/Default/$AppID/data/ssrf_proxy:/etc/squid
     networks:
       - ssrf_proxy_network
       - dify
@@ -208,7 +208,7 @@ services:
     container_name: dify-nginx
     restart: unless-stopped
     volumes:
-      - /DATA/AppData/$AppID/data/nginx:/etc/nginx
+      - /NextZen/Apps/Default/$AppID/data/nginx:/etc/nginx
     depends_on:
       - api
       - web

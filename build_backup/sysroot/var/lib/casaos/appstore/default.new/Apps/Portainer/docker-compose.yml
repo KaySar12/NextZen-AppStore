@@ -20,7 +20,7 @@ services:
     restart: unless-stopped
     volumes:
       - type: bind
-        source: /DATA/AppData/portainer
+        source: /NextZen/Apps/Default/portainer
         target: /data
       - type: bind
         source: /var/run/docker.sock

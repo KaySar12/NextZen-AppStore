@@ -83,7 +83,7 @@
 			},
 			{
 				"container": "/config",
-				"host": "/DATA/AppData/sabnzbd/config",
+				"host": "/NextZen/Apps/Default/sabnzbd/config",
 				"mode": "rw",
 				"allocation": "automatic",
 				"configurable": "no",

@@ -73,7 +73,7 @@
 		"volumes": [
 			{
 				"container": "/config",
-				"host": "/DATA/AppData/sickchill/config",
+				"host": "/NextZen/Apps/Default/sickchill/config",
 				"mode": "rw",
 				"allocation": "automatic",
 				"configurable": "no",

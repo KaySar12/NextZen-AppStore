@@ -30,7 +30,7 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/$AppID/wireguard
+        source: /NextZen/Apps/Default/$AppID/wireguard
         target: /etc/wireguard
     cap_add:
       - NET_ADMIN

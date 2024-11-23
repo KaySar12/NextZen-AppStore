@@ -73,7 +73,7 @@
         "volumes": [
             {
                 "container": "/db",
-                "host": "/DATA/AppData/$AppID/db",
+                "host": "/NextZen/Apps/Default/$AppID/db",
                 "mode": "rw",
                 "allocation": "automatic",
                 "configurable": "no",

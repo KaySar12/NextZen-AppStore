@@ -52,7 +52,7 @@
 		"volumes": [
 			{
                 "container": "/var/lib/grafana",
-                "host": "/DATA/AppData/$AppID/data",
+                "host": "/NextZen/Apps/Default/$AppID/data",
                 "mode": "rw",
                 "allocation": "automatic",
                 "configurable": "no",

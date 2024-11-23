@@ -19,10 +19,10 @@ services:
     restart: always
     volumes:
       - type: bind
-        source: /DATA/AppData/open-webui-ollama/open-webui
+        source: /NextZen/Apps/Default/open-webui-ollama/open-webui
         target: /app/backend/data
       - type: bind
-        source: /DATA/AppData/open-webui-ollama/ollama
+        source: /NextZen/Apps/Default/open-webui-ollama/ollama
         target: /root/.ollama
     privileged: false
     container_name: open-webui-ollama

@@ -73,7 +73,7 @@
 		"volumes": [
 			{
 				"container": "/config",
-				"host": "/DATA/AppData/smokeping/config",
+				"host": "/NextZen/Apps/Default/smokeping/config",
 				"mode": "rw",
 				"allocation": "automatic",
 				"configurable": "no",
@@ -81,7 +81,7 @@
 			},
 			{
 				"container": "/data",
-				"host": "/DATA/AppData/smokeping/data",
+				"host": "/NextZen/Apps/Default/smokeping/data",
 				"mode": "rw",
 				"allocation": "automatic",
 				"configurable": "no",

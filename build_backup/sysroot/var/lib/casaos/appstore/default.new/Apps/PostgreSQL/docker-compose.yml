@@ -44,7 +44,7 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/postgresql/data
+        source: /NextZen/Apps/Default/postgresql/data
         target: /var/lib/postgresql/data
     container_name: postgresql
 x-casaos:

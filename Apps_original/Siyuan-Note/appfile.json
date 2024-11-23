@@ -59,7 +59,7 @@
         "volumes": [
             {
                 "container": "/Siyuan-Note",
-                "host": "/DATA/AppData/$AppID/Siyuan-Note",
+                "host": "/NextZen/Apps/Default/$AppID/Siyuan-Note",
                 "mode": "rw",
                 "allocation": "automatic",
                 "configurable": "no",

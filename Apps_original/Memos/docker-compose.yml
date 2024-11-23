@@ -18,7 +18,7 @@ services:
     restart: unless-stopped
     volumes:
       - type: bind
-        source: /DATA/AppData/memos/memos
+        source: /NextZen/Apps/Default/memos/memos
         target: /var/opt/memos
     x-casaos:
       envs:

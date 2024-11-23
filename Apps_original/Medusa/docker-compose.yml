@@ -16,13 +16,13 @@ services:
     restart: unless-stopped
     volumes:
       - type: bind
-        source: /DATA/AppData/$AppID
+        source: /NextZen/Apps/Default/$AppID
         target: /config
       - type: bind
-        source: /DATA/AppData/$AppID/Downloads/Television
+        source: /NextZen/Apps/Default/$AppID/Downloads/Television
         target: /downloads
       - type: bind
-        source: /DATA/AppData/$AppID/Media/Television
+        source: /NextZen/Apps/Default/$AppID/Media/Television
         target: /tv
     network_mode: bridge
     privileged: false

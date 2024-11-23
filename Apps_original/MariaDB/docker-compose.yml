@@ -44,7 +44,7 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/mariadb/config
+        source: /NextZen/Apps/Default/mariadb/config
         target: /config
     container_name: mariadb
 x-casaos:

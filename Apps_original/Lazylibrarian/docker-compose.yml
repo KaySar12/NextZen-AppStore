@@ -25,7 +25,7 @@ services:
         source: /DATA/Media/Books
         target: /books
       - type: bind
-        source: /DATA/AppData/lazylibrarian/config
+        source: /NextZen/Apps/Default/lazylibrarian/config
         target: /config
     x-casaos:
       envs:

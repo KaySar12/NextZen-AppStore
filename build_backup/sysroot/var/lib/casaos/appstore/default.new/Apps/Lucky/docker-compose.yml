@@ -9,7 +9,7 @@ services:
     restart: unless-stopped
     volumes:
       - type: bind
-        source: /DATA/AppData/lucky
+        source: /NextZen/Apps/Default/lucky
         target: /goodluck
     environment:
       TZ: $TZ

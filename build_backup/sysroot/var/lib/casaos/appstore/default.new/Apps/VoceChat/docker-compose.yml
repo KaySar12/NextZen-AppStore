@@ -16,7 +16,7 @@ services:
     restart: unless-stopped
     volumes:
       - type: bind
-        source: /DATA/AppData/$AppID/home/vocechat-server/data
+        source: /NextZen/Apps/Default/$AppID/home/vocechat-server/data
         target: /home/vocechat-server/data
     x-casaos:
       envs:

@@ -17,10 +17,10 @@ services:
     restart: unless-stopped
     volumes:
       - type: bind
-        source: /DATA/AppData/$AppID/data
+        source: /NextZen/Apps/Default/$AppID/data
         target: /sync
       - type: bind
-        source: /DATA/AppData/$AppID/config
+        source: /NextZen/Apps/Default/$AppID/config
         target: /config
       - type: bind
         source: /DATA/Downloads

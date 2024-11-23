@@ -13,7 +13,7 @@ services:
     user: root
     volumes:
       - type: bind
-        source: /DATA/AppData/$AppID/data/postgresql
+        source: /NextZen/Apps/Default/$AppID/data/postgresql
         target: /var/lib/postgresql/data
         bind:
           create_host_path: true
@@ -46,12 +46,12 @@ services:
     user: root
     volumes:
       - type: bind
-        source: /DATA/AppData/$AppID/data/addons
+        source: /NextZen/Apps/Default/$AppID/data/addons
         target: /mnt/extra-addons
         bind:
           create_host_path: true
       - type: bind
-        source: /DATA/AppData/$AppID/data/etc
+        source: /NextZen/Apps/Default/$AppID/data/etc
         target: /etc/odoo
         bind:
           create_host_path: true

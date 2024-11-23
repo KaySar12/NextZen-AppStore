@@ -11,7 +11,7 @@ services:
     image: tsaridas/stremio-docker:v1.1.8
     volumes:
       - type: bind
-        source: /DATA/AppData/$AppID/config
+        source: /NextZen/Apps/Default/$AppID/config
         target: /root/.stremio-server
     ports:
       - target: 11470

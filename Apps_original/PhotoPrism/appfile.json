@@ -71,7 +71,7 @@
         "volumes": [
             {
                 "container": "/photoprism/storage",
-                "host": "/DATA/AppData/$AppID/photoprism/storage",
+                "host": "/NextZen/Apps/Default/$AppID/photoprism/storage",
                 "mode": "rw",
                 "allocation": "automatic",
                 "configurable": "no",

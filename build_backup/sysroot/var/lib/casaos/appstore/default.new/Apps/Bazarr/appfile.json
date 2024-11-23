@@ -88,7 +88,7 @@
 			},
 			{
 				"container": "/config",
-				"host": "/DATA/AppData/bazarr/config",
+				"host": "/NextZen/Apps/Default/bazarr/config",
 				"mode": "rw",
 				"allocation": "automatic",
 				"configurable": "no",

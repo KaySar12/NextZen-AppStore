@@ -22,10 +22,10 @@ services:
     restart: unless-stopped
     volumes:
       - type: bind
-        source: /DATA/AppData/$AppID/config
+        source: /NextZen/Apps/Default/$AppID/config
         target: /config
       - type: bind
-        source: /DATA/AppData/$AppID/data
+        source: /NextZen/Apps/Default/$AppID/data
         target: /data
       - type: bind
         source: /ROMS/nes

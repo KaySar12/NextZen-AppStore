@@ -20,7 +20,7 @@ services:
     restart: unless-stopped
     volumes:
       - type: bind
-        source: /DATA/AppData/nzbget/config
+        source: /NextZen/Apps/Default/nzbget/config
         target: /config
       - type: bind
         source: /DATA/Downloads

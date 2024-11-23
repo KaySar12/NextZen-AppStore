@@ -33,7 +33,7 @@ services:
       PATH_TO_VOLUME: /var/lib/data
       PROJECT_ID: taskingai
     volumes:
-      - /DATA/AppData/$AppID/data/object_storage:/var/lib/data
+      - /NextZen/Apps/Default/$AppID/data/object_storage:/var/lib/data
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8000/v1/health_check"]
       interval: 15s
@@ -55,7 +55,7 @@ services:
       PATH_TO_VOLUME: /var/lib/data
       PROJECT_ID: taskingai
     volumes:
-      - /DATA/AppData/$AppID/data/object_storage:/var/lib/data
+      - /NextZen/Apps/Default/$AppID/data/object_storage:/var/lib/data
     depends_on:
       - db
       - cache
@@ -87,7 +87,7 @@ services:
       PATH_TO_VOLUME: /var/lib/data
       PROJECT_ID: taskingai
     volumes:
-      - /DATA/AppData/$AppID/data/object_storage:/var/lib/data
+      - /NextZen/Apps/Default/$AppID/data/object_storage:/var/lib/data
     depends_on:
       - db
       - cache
@@ -108,7 +108,7 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: TaskingAI321
     volumes:
-      - /DATA/AppData/$AppID/data/postgres:/var/lib/postgresql/data
+      - /NextZen/Apps/Default/$AppID/data/postgres:/var/lib/postgresql/data
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres"]
       interval: 5s
@@ -122,7 +122,7 @@ services:
     image: redis:7-alpine
     command: ["redis-server", "--requirepass", "TaskingAI321"]
     volumes:
-      - /DATA/AppData/$AppID/data/redis:/data
+      - /NextZen/Apps/Default/$AppID/data/redis:/data
     healthcheck:
       test: ["CMD", "redis-cli", "auth", "TaskingAI321", "ping"]
       interval: 5s
@@ -138,7 +138,7 @@ services:
       - "3080:80"
       # edit this to change the port, for example to "8080:80" to use port 8080
     volumes:
-      - /DATA/AppData/$AppID/data/nginx_cache:/var/cache/nginx
+      - /NextZen/Apps/Default/$AppID/data/nginx_cache:/var/cache/nginx
     depends_on:
       - frontend
       - backend-web

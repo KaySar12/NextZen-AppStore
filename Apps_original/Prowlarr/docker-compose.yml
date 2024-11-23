@@ -18,7 +18,7 @@ services:
     restart: unless-stopped
     volumes:
       - type: bind
-        source: /DATA/AppData/prowlarr/config
+        source: /NextZen/Apps/Default/prowlarr/config
         target: /config
     x-casaos:
       envs:

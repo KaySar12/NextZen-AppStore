@@ -31,10 +31,10 @@ services:
     restart: unless-stopped
     volumes:
       - type: bind
-        source: /DATA/AppData/$AppID/etc/pihole/
+        source: /NextZen/Apps/Default/$AppID/etc/pihole/
         target: /etc/pihole
       - type: bind
-        source: /DATA/AppData/$AppID/etc/dnsmasq.d/
+        source: /NextZen/Apps/Default/$AppID/etc/dnsmasq.d/
         target: /etc/dnsmasq.d
     x-casaos:
       envs:

@@ -61,7 +61,7 @@
     "volumes": [
       {
         "container": "/var/www/html",
-        "host": "/DATA/AppData/$AppID/var/www/html",
+        "host": "/NextZen/Apps/Default/$AppID/var/www/html",
         "mode": "rw",
         "allocation": "automatic",
         "configurable": "no",

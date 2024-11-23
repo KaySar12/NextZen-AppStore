@@ -20,7 +20,7 @@ services:
     restart: unless-stopped
     volumes:
       - type: bind
-        source: /DATA/AppData/$AppID/workspace
+        source: /NextZen/Apps/Default/$AppID/workspace
         target: /siyuan/workspace
     x-casaos:
       envs:

@@ -71,7 +71,7 @@
 		"volumes": [
 			{
 				"container": "/config",
-				"host": "/DATA/AppData/embystat/config",
+				"host": "/NextZen/Apps/Default/embystat/config",
 				"mode": "rw",
 				"allocation": "automatic",
 				"configurable": "no",

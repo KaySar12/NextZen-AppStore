@@ -32,7 +32,7 @@ services:
     restart: unless-stopped
     volumes:
       - type: bind
-        source: /DATA/AppData/unifi-network-application
+        source: /NextZen/Apps/Default/unifi-network-application
         target: /config
     networks:
      - unifi-bridge
@@ -71,7 +71,7 @@ services:
     restart: unless-stopped
     volumes:
       - type: bind
-        source: /DATA/AppData/unifi-db
+        source: /NextZen/Apps/Default/unifi-db
         target: /data/db
     networks:
      - unifi-bridge

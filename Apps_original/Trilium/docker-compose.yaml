@@ -17,7 +17,7 @@ services:
     restart: unless-stopped
     volumes:
       - type: bind
-        source: /DATA/AppData/trilium
+        source: /NextZen/Apps/Default/trilium
         target: /home/node/trilium-data
     network_mode: bridge
     privileged: false

@@ -68,7 +68,7 @@
 		"volumes": [
 			{
 				"container": "/var/opt/memos",
-				"host": "/DATA/AppData/memos/memos",
+				"host": "/NextZen/Apps/Default/memos/memos",
 				"mode": "rw",
 				"allocation": "automatic",
 				"configurable": "no",

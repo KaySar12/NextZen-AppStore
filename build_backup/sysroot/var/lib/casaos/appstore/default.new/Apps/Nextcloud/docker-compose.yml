@@ -17,7 +17,7 @@ services:
     restart: unless-stopped
     volumes:
       - type: bind
-        source: /DATA/AppData/$AppID/var/www/html
+        source: /NextZen/Apps/Default/$AppID/var/www/html
         target: /var/www/html
     x-casaos:
       ports:

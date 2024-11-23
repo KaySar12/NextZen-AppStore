@@ -72,7 +72,7 @@
 		"volumes": [
 			{
 				"container": "/config",
-				"host": "/DATA/AppData/mylar3/config",
+				"host": "/NextZen/Apps/Default/mylar3/config",
 				"mode": "rw",
 				"allocation": "automatic",
 				"configurable": "no",

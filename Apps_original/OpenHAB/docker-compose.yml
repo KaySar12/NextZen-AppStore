@@ -22,13 +22,13 @@ services:
         target: /etc/timezone
         read_only: true
       - type: bind
-        source: /DATA/AppData/$AppID/addons
+        source: /NextZen/Apps/Default/$AppID/addons
         target: /openhab/addons
       - type: bind
-        source: /DATA/AppData/$AppID/conf
+        source: /NextZen/Apps/Default/$AppID/conf
         target: /openhab/conf
       - type: bind
-        source: /DATA/AppData/$AppID/userdata
+        source: /NextZen/Apps/Default/$AppID/userdata
         target: /openhab/userdata
     x-casaos:
       envs:

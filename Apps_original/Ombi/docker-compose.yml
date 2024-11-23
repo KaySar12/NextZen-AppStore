@@ -19,7 +19,7 @@ services:
     restart: unless-stopped
     volumes:
       - type: bind
-        source: /DATA/AppData/ombi/config
+        source: /NextZen/Apps/Default/ombi/config
         target: /config
     x-casaos:
       envs:

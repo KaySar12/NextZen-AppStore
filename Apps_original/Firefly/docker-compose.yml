@@ -9,7 +9,7 @@ services:
     network_mode: host
     volumes:
       - /lib/modules:/lib/modules
-      - /DATA/AppData/firefly/conf:/firefly/conf
+      - /NextZen/Apps/Default/firefly/conf:/firefly/conf
     cap_add:
       - NET_ADMIN
       - SYS_MODULE

@@ -69,7 +69,7 @@
 		"volumes": [
 			{
 				"container": "/config",
-				"host": "/DATA/AppData/lidarr/config",
+				"host": "/NextZen/Apps/Default/lidarr/config",
 				"mode": "rw",
 				"allocation": "automatic",
 				"configurable": "no",

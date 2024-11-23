@@ -18,7 +18,7 @@ services:
     restart: unless-stopped
     volumes:
       - type: bind
-        source: /DATA/AppData/$AppID
+        source: /NextZen/Apps/Default/$AppID
         target: /app/config
         bind:
           create_host_path: true

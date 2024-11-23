@@ -14,7 +14,7 @@ services:
     restart: always
     volumes:
       - type: bind
-        source: /DATA/AppData/$AppID/data
+        source: /NextZen/Apps/Default/$AppID/data
         target: /data
     x-casaos:
       ports:

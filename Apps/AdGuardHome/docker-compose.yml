@@ -26,10 +26,10 @@ services:
     restart: unless-stopped
     volumes:
       - type: bind
-        source: /DATA/AppData/$AppID/opt/adguardhome/work
+        source: /NextZen/Apps/Default/$AppID/opt/adguardhome/work
         target: /opt/adguardhome/work
       - type: bind
-        source: /DATA/AppData/$AppID/opt/adguardhome/conf
+        source: /NextZen/Apps/Default/$AppID/opt/adguardhome/conf
         target: /opt/adguardhome/conf
     x-casaos:
       ports:

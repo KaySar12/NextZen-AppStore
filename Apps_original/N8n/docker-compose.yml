@@ -17,7 +17,7 @@ services:
     restart: unless-stopped
     volumes:
       - type: bind
-        source: /DATA/AppData/$AppID
+        source: /NextZen/Apps/Default/$AppID
         target: /home/node/.n8n
     x-casaos:
       envs:

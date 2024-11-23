@@ -166,7 +166,7 @@
         "volumes": [
             {
                 "container": "/crafty/backups",
-                "host": "/DATA/AppData/crafty/backups",
+                "host": "/NextZen/Apps/Default/crafty/backups",
                 "mode": "rw",
                 "allocation": "automatic",
                 "configurable": "no",
@@ -174,7 +174,7 @@
             },
             {
                 "container": "/crafty/logs",
-                "host": "/DATA/AppData/crafty/logs",
+                "host": "/NextZen/Apps/Default/crafty/logs",
                 "mode": "rw",
                 "allocation": "automatic",
                 "configurable": "no",
@@ -182,7 +182,7 @@
             },
             {
                 "container": "/crafty/servers",
-                "host": "/DATA/AppData/crafty/servers",
+                "host": "/NextZen/Apps/Default/crafty/servers",
                 "mode": "rw",
                 "allocation": "automatic",
                 "configurable": "no",
@@ -190,7 +190,7 @@
             },
             {
                 "container": "/crafty/app/config",
-                "host": "/DATA/AppData/crafty/config",
+                "host": "/NextZen/Apps/Default/crafty/config",
                 "mode": "rw",
                 "allocation": "automatic",
                 "configurable": "no",
@@ -198,7 +198,7 @@
             },
             {
                 "container": "/crafty/import",
-                "host": "/DATA/AppData/crafty/import",
+                "host": "/NextZen/Apps/Default/crafty/import",
                 "mode": "rw",
                 "allocation": "automatic",
                 "configurable": "no",

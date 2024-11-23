@@ -12,7 +12,7 @@ services:
       - SYS_ADMIN
     volumes:
       - type: bind
-        source: /DATA/AppData/anythingllm/storage
+        source: /NextZen/Apps/Default/anythingllm/storage
         target: /app/server/storage
     restart: always
     extra_hosts:

@@ -36,10 +36,10 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/threadfin/config
+        source: /NextZen/Apps/Default/threadfin/config
         target: /home/threadfin/conf/data
       - type: bind
-        source: /DATA/AppData/threadfin/backup
+        source: /NextZen/Apps/Default/threadfin/backup
         target: /home/threadfin/conf/backup
     container_name: threadfin
 

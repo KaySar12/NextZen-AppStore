@@ -78,7 +78,7 @@
             },
             {
                 "container": "/opt/openhab/addons",
-                "host": "/DATA/AppData/$AppID/addons",
+                "host": "/NextZen/Apps/Default/$AppID/addons",
                 "mode": "rw",
                 "allocation": "automatic",
                 "configurable": "no",
@@ -86,7 +86,7 @@
             },
             {
                 "container": "/opt/openhab/conf",
-                "host": "/DATA/AppData/$AppID/conf",
+                "host": "/NextZen/Apps/Default/$AppID/conf",
                 "mode": "rw",
                 "allocation": "automatic",
                 "configurable": "no",
@@ -94,7 +94,7 @@
             },
             {
                 "container": "/opt/openhab/userdata",
-                "host": "/DATA/AppData/$AppID/userdata",
+                "host": "/NextZen/Apps/Default/$AppID/userdata",
                 "mode": "rw",
                 "allocation": "automatic",
                 "configurable": "no",

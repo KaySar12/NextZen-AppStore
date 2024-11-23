@@ -62,7 +62,7 @@
         [
            {
                 "container": "/home/node/.n8n",
-                "host": "/DATA/AppData/$AppID/.n8n",
+                "host": "/NextZen/Apps/Default/$AppID/.n8n",
                 "mode": "rw",
                 "allocation": "automatic",
                 "configurable": "advanced",

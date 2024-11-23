@@ -68,7 +68,7 @@
 		"volumes": [
 			{
 				"container": "/config",
-				"host": "/DATA/AppData/prowlarr/config",
+				"host": "/NextZen/Apps/Default/prowlarr/config",
 				"mode": "rw",
 				"allocation": "automatic",
 				"configurable": "no",

@@ -82,7 +82,7 @@
 		"volumes": [
 			{
 				"container": "/config",
-				"host": "/DATA/AppData/nzbget/config",
+				"host": "/NextZen/Apps/Default/nzbget/config",
 				"mode": "rw",
 				"allocation": "automatic",
 				"configurable": "no",

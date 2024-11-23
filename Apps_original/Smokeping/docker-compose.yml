@@ -18,10 +18,10 @@ services:
     restart: unless-stopped
     volumes:
       - type: bind
-        source: /DATA/AppData/smokeping/config
+        source: /NextZen/Apps/Default/smokeping/config
         target: /config
       - type: bind
-        source: /DATA/AppData/smokeping/data
+        source: /NextZen/Apps/Default/smokeping/data
         target: /data
     x-casaos:
       envs:

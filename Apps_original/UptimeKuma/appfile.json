@@ -54,7 +54,7 @@
         "volumes": [
             {
                 "container": "/app/data",
-                "host": "/DATA/AppData/$AppID/app/data",
+                "host": "/NextZen/Apps/Default/$AppID/app/data",
                 "mode": "rw",
                 "allocation": "automatic",
                 "configurable": "advanced",

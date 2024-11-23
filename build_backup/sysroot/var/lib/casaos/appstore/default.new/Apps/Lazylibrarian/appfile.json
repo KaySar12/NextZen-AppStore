@@ -93,7 +93,7 @@
 			},
 			{
 				"container": "/config",
-				"host": "/DATA/AppData/lazylibrarian/config",
+				"host": "/NextZen/Apps/Default/lazylibrarian/config",
 				"mode": "rw",
 				"allocation": "automatic",
 				"configurable": "no",
